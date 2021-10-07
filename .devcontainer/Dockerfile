@@ -54,3 +54,5 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 # libunwind
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get -y install --no-install-recommends libunwind-13-dev
+
+RUN ln -s /usr/bin/clang-13 /usr/bin/clang
